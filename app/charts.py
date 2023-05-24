@@ -9,11 +9,11 @@ def generarGraficoBarras(nombres, valores):
     plt.close()
 
 
-def generarGraficoPie(equipo, nombres, valores):
+def generarGraficoPie(equipoChartFinal, nombres, valores):
     fig, ax = plt.subplots()
     # Le indicamos directamente como son los labels
     ax.pie(valores, labels=nombres, autopct="%0.1f %%")
     # Se le indica que ponga la grafica en el centro y que sea en forma de circulo
     ax.axis('equal')
-    plt.savefig(f'./imgs/{equipo}.png')
+    plt.savefig(f'./imgs/{equipoChartFinal}.png')
     plt.close()
